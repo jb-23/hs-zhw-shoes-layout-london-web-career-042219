@@ -24,4 +24,32 @@
 
 /* Positioning Classes */
 
+.col-wrap {
+  clear: both;
+  margin-bottom: 1%;
+}
+
+.col-wrap::after {
+  content: "*";
+  visibility: hidden;
+  display: table;
+}
+
+.col-single {
+  width: 32%;
+}
+
+.col-double {
+  width: 66%;
+}
+
+.col-single, .col-double {
+  float: left;
+  height: 100%;
+  margin-left: 2%;
+}
+
+.col-first {
+  margin-left: 0;
+}
 
